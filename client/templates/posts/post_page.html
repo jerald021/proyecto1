@@ -1,0 +1,25 @@
+<template name="postPage">
+    <div class="post-page page post">
+        {{> postItem}}
+        <div class="post">
+            {{descripcion}}
+        </div>
+        <br>
+         <!--llamada a la plantilla comentario -->
+        {{#if currentUser}}
+            {{> comentario}}
+        {{else}}
+            <!--{{> login}} do something como llamar a otra plantilla-->
+        {{/if}}
+
+        <!--imprime los comentarios-->
+        <h2>Comentarios</h2>
+        {{#each comentarios}}
+        <div class="post">
+            {{comentario}}
+                enviado {{livestamp fecha}}
+            por {{autor}}
+        </div>
+        {{/each}}
+    </div>
+</template>
