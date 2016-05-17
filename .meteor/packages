@@ -22,7 +22,8 @@ iron:router
 sacha:spin
 ian:accounts-ui-bootstrap-3
 accounts-password
-meteortoys:allthings
+msavin:mongol
 mrt:moment
 copleykj:livestamp
 check
+aldeed:collection2

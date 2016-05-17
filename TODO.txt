@@ -1,0 +1,1 @@
+al editar un post bloquearlo directamente con una plantilla de acceso denegado.

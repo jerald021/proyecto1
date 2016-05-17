@@ -1,22 +1,25 @@
-if (Posts.find().count() === 0) {
-    //posts
-    Posts.insert({
-        title: 'Introducing Telescope',
-        url: 'http://sachagreif.com/introducing-telescope/',
-        fechaPost: new Date()
-    });
-
-    Posts.insert({
-        title: 'Meteor',
-        url: 'http://meteor.com',
-        fechaPost: new Date()
-    });
-
-    Posts.insert({
-        title: 'The Meteor Book',
-        url: 'http://themeteorbook.com',
-        fechaPost: new Date()
-    });
+//if (Posts.find().count() === 0) {
+//    //posts
+//    Posts.insert({
+//        title: 'Introducing Telescope',
+//        url: 'http://sachagreif.com/introducing-telescope/',
+//        fechaPost: new Date(),
+//        autor: 'admin'
+//    });
+//
+//    Posts.insert({
+//        title: 'Meteor',
+//        url: 'http://meteor.com',
+//        fechaPost: new Date(),
+//        autor: 'admin'
+//    });
+//
+//    Posts.insert({
+//        title: 'The Meteor Book',
+//        url: 'http://themeteorbook.com',
+//        fechaPost: new Date(),
+//        autor: 'user'
+//    });
 
     //comentarios
     //var now = new Date().getTime();
@@ -30,4 +33,4 @@ if (Posts.find().count() === 0) {
     //    profile: { name: 'Sacha Greif' }
     //});
     //var sacha = Meteor.users.findOne(sachaId);
-}
+//}

@@ -20,6 +20,13 @@
 //    }
 //});
 
+/*Template.postPage.helpers({
+    comments: function() {
+        return Comments.find();
+        //return Comments.find({postId: this._id});
+    }
+});*/
+
 //Template.players.helpers({
 //    player: PlayerList.find({}, {sort:{score:-1}}),
 //    nJugadores: PlayerList.find().count()

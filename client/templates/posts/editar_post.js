@@ -4,7 +4,7 @@ Template.editarPost.events({
 
         var currentId = this._id;
         var postEditado = {
-            title: t.find('.input1').value,
+            title: t    .find('.input1').value,
             url: t.find('.input2').value,
             descripcion: t.find('.input3').value
         };

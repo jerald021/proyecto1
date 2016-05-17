@@ -1,13 +1,13 @@
 <template name="crearPost">
     <div>
         <form class="formulario">
-            Titulo:<br>
-            <input class="input1" type="text" name="title"><br>
-            Enlace:<br>
-            <input class="input2" type="text" name="url"><br>
-            Descripcion:<br>
-            <input class="input3" type="text" name="descripcion"><br>
-            <input type="submit" value="Submit">
+            <h3>Titulo:</h3>
+            <input class="input1" type="text" placeholder="Titulo"><br>
+            <h3>Enlace:</h3>
+            <input class="input2" type="text" placeholder="Url del enlace"><br>
+            <h3>Descripcion:</h3>
+            <textarea class="input3" rows="8" cols="50" maxlength="500" placeholder="Introduce una descripcion (Opcional)."></textarea> <br>
+            <input type="submit" class="btn btn-primary submit" value="Submit">
         </form>
     </div>
 </template>

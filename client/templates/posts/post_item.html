@@ -1,14 +1,16 @@
 <template name="postItem">
     <div class="post">
         <div class="post-content">
-            <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span> <br><span>enviado
-                {{livestamp fechaPost}} por {{autor}}
-                {{#if ownPost}} <a href="{{pathFor 'editarPost'}}" class="discuss btn btn-default">Edit</a>
-                {{/if}}
+            <h3><a href="{{url}}">{{title}}</a> <span>{{domain}}</span> <br>
+                <span>enviado {{livestamp fechaPost}} por {{autor}}
+                <br>
+                <p>{{commentsCount}} comentarios</p>
                 </span></h3>
         </div>
-        <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Comments</a>
-        <a class="eliminar discuss btn btn-default">Remove</a>
-
-    </div>
+        {{#if ownPost}}
+            <a href="{{pathFor 'editarPost'}}" class="discuss btn btn-default">Edit</a>
+            <a class="eliminar discuss btn btn-default">Remove</a>
+        {{/if}}
+<a href="{{pathFor 'postPage'}}" class="discuss btn btn-default"> Comments</a>
+</div>
 </template>

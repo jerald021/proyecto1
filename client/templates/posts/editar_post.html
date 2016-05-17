@@ -1,10 +1,13 @@
 <template name="editarPost">
     <div>
         <form class="formulario">
-            Titulo: <input class="input1" type="text" value="{{title}}" name="title"><br>
-            Enlace: <input class="input2" type="text" value="{{url}}" name="url"><br>
-            Descripcion: <input class="input3" type="text" value="{{descripcion}}" name="descripcion"><br>
-            <input type="submit" value="Submit">
+            <h3>Titulo:</h3>
+            <input class="input1" type="text" value="{{title}}" name="title">
+            <h3>Enlace:</h3>
+            <input class="input2" type="text" value="{{url}}" name="url">
+            <h3>Descripcion:</h3>
+            <textarea class="input3" rows="8" cols="50" maxlength="500" value="{{descripcion}}"></textarea><br>
+            <input type="submit" class="btn btn-primary submit" value="Submit">
         </form>
     </div>
 </template>

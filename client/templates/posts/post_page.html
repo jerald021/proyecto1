@@ -1,6 +1,6 @@
 <template name="postPage">
     <div class="post-page page post">
-        {{> postItem}}
+            {{> postItem}}
         <div class="post">
             {{descripcion}}
         </div>
@@ -14,10 +14,10 @@
 
         <!--imprime los comentarios-->
         <h2>Comentarios</h2>
-        {{#each comentarios}}
+        {{#each comments}}
         <div class="post">
-            {{comentario}}
-                enviado {{livestamp fecha}}
+            {{this.descripcion}}
+                enviado {{livestamp fechaComentario}}
             por {{autor}}
         </div>
         {{/each}}

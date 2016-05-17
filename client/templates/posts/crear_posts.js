@@ -11,6 +11,8 @@ Template.crearPost.events({
             //autor: Meteor.user().username
         };
 
+        //Metodo antiguo de insertar post
+
         //Posts.insert({
         //    title: t.find('.input1').value,
         //    url: t.find('.input2').value,
@@ -23,6 +25,7 @@ Template.crearPost.events({
             // display the error to the user and abort
             if (error)
                 return alert(error.reason);
+                //return alert(Books.simpleSchema().namedContext().invalidKeys());
 
             if (result.postExists)
                 alert('Este enlace ya ha sido creado ;(');
